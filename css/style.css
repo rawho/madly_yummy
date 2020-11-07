@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222222 !important;
+    color: #ffffff !important;
+}
+
+
+.madly_btn{
+    width: 200px;
+    margin-top: 30px;
+    padding: 10px 15px;
+    background-color: #8dc641;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+.madly_container{
+    background-color: #8dc641;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.madly_container .madly_text{
+    position: absolute;
+    left: 5%;
+}
+
+
+.madly_container .madly_text h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+}
+
+#madly{
+    color: #8dc641;
+    font-size: 8rem;
+}
+
+.madly_container .madly_curve{
+    min-height: 90vh;
+    background-color: #222;
+    transform: translateX(50%);
+    border-radius: 500px;
+}
+
+.madly_container .madly_curve .madly_text_2{
+    position: absolute;
+    right: 52%;
+    top: 15%;
+}
+
+.madly_container .madly_curve .madly_text_2 h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+}
+
+.madly_container .madly_curve .madly_social_links{
+    position: absolute;
+    right: 70%;
+    top: 75%;
+}
+
+.madly_container .madly_curve .madly_social_links i{
+    margin-left: 50px;
+    font-size: 4.5rem;
+}
+
+.madly_container .madly_curve .madly_social_links a{
+    color:#8dc641;
+    transition: color 0.5s ease-in;
+}
+.madly_container .madly_curve .madly_social_links a:hover{
+    color: #fff;
+}
+
+
+#scroll-down{
+    display: block;
+    width: fit-content;
+    align-self: center;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+    animation: scrollDown 2s ease infinite;
+}
+
+@keyframes scrollDown{
+    0%,20%,50%,80%,100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
+
+
+.latest_{
+    padding: 3rem;
+}
+
+.latest_ h1{
+    text-align: center;
+    border-bottom: 1px solid rgb(46, 163, 46);
+}
+
+.latest_ .latest_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.latest_ .latest_container .video{
+    grid-column: auto;
+    min-height: 40vh;
+}
+
+.giveaway_container{
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.giveaway_container .giveaway_poster img{
+    width: 70%;
+}
+
+.giveaway_container .giveaway_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.giveaway_container .giveaway_text h2{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+@media(max-width: 676px) {
+    html{
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+    .madly_container .madly_text{
+        left: 8%;
+    }
+    .madly_container .madly_text h1{
+        font-size: 2rem;
+    }
+    .madly_container .madly_curve .madly_text_2{
+        position: absolute;
+        right: 50%;
+        top: 40%;
+    }
+    .madly_container .madly_curve .madly_text_2 h1{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+    #madly{
+        color: #8dc641;
+        font-size: 3rem;
+    }
+
+    .madly_container .madly_curve .madly_social_links{
+        position: absolute;
+        right: 60%;
+        display: flex;
+    }
+    .madly_container .madly_curve .madly_social_links i{
+        margin-left: 50px;
+        font-size: 2rem;
+    }
+    .latest_{
+        padding: 1rem;
+    }
+    .latest_ .latest_container{
+        grid-template-columns: 1fr;
+    }
+    .giveaway_container{
+        grid-template-columns: 1fr;
+    }
+    .giveaway_container .giveaway_poster img{
+        width: 100%;
+    }
+    .giveaway_container .giveaway_text h2{
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: 100;
+    }
+    
+}
+
